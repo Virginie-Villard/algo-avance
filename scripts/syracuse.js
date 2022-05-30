@@ -15,6 +15,7 @@
 // Écrivez une fonction récursive qui retourne la valeur U(N, i) quelques soient N et i passés en
 // paramètre.
 let count =0;
+
 function syracuse(N, i) {
     // debugger;
     count++;
@@ -34,5 +35,5 @@ function syracuse(N, i) {
 }
 
 console.log(syracuse(15, 10));
-console.log("count = "+count)
+console.log("count = " + count);
 

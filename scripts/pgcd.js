@@ -9,19 +9,21 @@
 // (mod est le reste de la division entière souvent représenter par l’opérateur % ).
 // Écrivez une fonction récursive qui retourne la valeur pgcd(a, b)
 
+let count =0;
+
 function pgcd(a, b) {
     // debugger;
+    count++;
 
     if(b !== 0) {
         const r = a % b;
-        // console.log("pgcd(b, r) = " + pgcd(b, r));
         return result = pgcd(b, r);
     }
 
     if (b === 0) {
-        // console.log("a = " + a);
         return result = a;
     }
 }
 
-console.log(pgcd(20, 40));
+console.log(pgcd(18, 77));
+console.log("count = " + count);

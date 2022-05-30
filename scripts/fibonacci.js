@@ -6,7 +6,11 @@
 // F(n)= F(n-1) + F(n-2) pour n>1
 // Écrivez une fonction récursive qui retourne la valeur Fn d’un nombre n, passé en paramètre.
 
+let count =0;
+
 function fibonacci(number) {
+    count++;
+
     if(number === 0) {
         return 0
     }
@@ -16,4 +20,6 @@ function fibonacci(number) {
     return fibonacci(number - 1) + fibonacci(number - 2);
 }
 
-console.log(fibonacci(15))
+console.log("Fibonacci récursif : ")
+console.log(fibonacci(100));
+console.log("count = " + count);
